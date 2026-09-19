@@ -7,8 +7,8 @@ spring:
 
   datasource:
     url: jdbc:postgresql://localhost:5432/auth
-    username: postgres
-    password: root
+    username: "{cipher}9f3cacd07937afe55b0971b1011c464a414e0763eab207c93f75290608c20aa1"
+    password: "{cipher}437b7ee644e61a99d7b95a1ffdde6b5c8139b948ba5502f4a82c8b8c06c6bf71"
 
   jpa:
     hibernate:
@@ -30,7 +30,7 @@ logging:
 
 jwt:
   secret:
-    key: LZxI4vNgRcPi3uDp4tOlApcJan9LnLiOKC9KDwYslWH
+    key: "{cipher}c6a4b36d9f669b4d35a44bd99a6262385c17b2b0d4f0e5c120e0a65b10735294d6d8dfa9b29c8ddf359560f74e788ead51ac1348f7c1c21a5add64a165e83f1c"
   accessToken:
     expiration: 900000
   refreshToken:
