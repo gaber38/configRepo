@@ -29,6 +29,15 @@ management:
     web:
       exposure:
         include: "*"
+    health:
+      probes:
+        enabled: true
+
+  health:
+    readiness-state:
+      enabled: true
+    liveness-state:
+      enabled: true
 
 logging:
   level:
